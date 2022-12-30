@@ -70,27 +70,27 @@
 				<td><input type="text" name="isbn"></td>
 			</tr>
 			<tr>
-				<th>Title</th>
+				<th>Tựa sách</th>
 				<td><input type="text" name="title" required></td>
 			</tr>
 			<tr>
-				<th>Author</th>
+				<th>Tác giả</th>
 				<td><input type="text" name="author" required></td>
 			</tr>
 			<tr>
-				<th>Image</th>
+				<th>Hình ảnh</th>
 				<td><input type="file" name="image"></td>
 			</tr>
 			<tr>
-				<th>Description</th>
+				<th>Mô tả</th>
 				<td><textarea name="descr" cols="40" rows="5"></textarea></td>
 			</tr>
 			<tr>
-				<th>Price</th>
+				<th>Giá</th>
 				<td><input type="text" name="price" required></td>
 			</tr>
 			<tr>
-				<th>Publisher</th>
+				<th>Nhà xuất bản</th>
 				<td><input type="text" name="publisher" required></td>
 			</tr>
 		</table>
