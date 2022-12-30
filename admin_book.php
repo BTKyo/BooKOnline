@@ -7,17 +7,17 @@
 	$conn = db_connect();
 	$result = getAll($conn);
 ?>
-	<p class="lead"><a href="admin_add.php">Add new book</a></p>
-	<a href="admin_signout.php" class="btn btn-primary">Sign out!</a>
+	<p class="lead"><a href="admin_add.php">Thêm Sách Mới</a></p>
+	<a href="admin_signout.php" class="btn btn-primary">Đăng Xuất!</a>
 	<table class="table" style="margin-top: 20px">
 		<tr>
 			<th>ISBN</th>
-			<th>Title</th>
-			<th>Author</th>
-			<th>Image</th>
-			<th>Description</th>
-			<th>Price</th>
-			<th>Publisher</th>
+			<th>Tự sách</th>
+			<th>Tác giả</th>
+			<th>Hình ảnh</th>
+			<th>Mô tả</th>
+			<th>Giá</th>
+			<th>Nhà xuất bản</th>
 			<th>&nbsp;</th>
 			<th>&nbsp;</th>
 		</tr>
@@ -30,8 +30,8 @@
 			<td><?php echo $row['book_descr']; ?></td>
 			<td><?php echo $row['book_price']; ?></td>
 			<td><?php echo getPubName($conn, $row['publisherid']); ?></td>
-			<td><a href="admin_edit.php?bookisbn=<?php echo $row['book_isbn']; ?>">Edit</a></td>
-			<td><a href="admin_delete.php?bookisbn=<?php echo $row['book_isbn']; ?>">Delete</a></td>
+			<td><a href="admin_edit.php?bookisbn=<?php echo $row['book_isbn']; ?>">Sửa</a></td>
+			<td><a href="admin_delete.php?bookisbn=<?php echo $row['book_isbn']; ?>">Xóa</a></td>
 		</tr>
 		<?php } ?>
 	</table>
