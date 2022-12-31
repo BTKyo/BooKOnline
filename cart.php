@@ -85,8 +85,8 @@
 	   	<input type="submit" class="btn btn-primary" name="save_change" value="Save Changes">
 	</form>
 	<br/><br/>
-	<a href="checkout.php" class="btn btn-primary">Go To Checkout</a> 
-	<a href="books.php" class="btn btn-primary">Continue Shopping</a>
+	<a href="checkout.php" class="btn btn-primary">Chuyển đến thanh toán</a> 
+	<a href="books.php" class="btn btn-primary">Tiếp tục mua sắm</a>
 <?php
 	} else {
 		echo "<p class=\"text-warning\">Your cart is empty! Please make sure you add some books in it!</p>";

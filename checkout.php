@@ -20,9 +20,9 @@
 	<table class="table">
 		<tr>
 			<th>Item</th>
-			<th>Price</th>
-	    	<th>Quantity</th>
-	    	<th>Total</th>
+			<th>Giá</th>
+	    	<th>Số lượng</th>
+	    	<th>Tổng</th>
 	    </tr>
 	    	<?php
 			    foreach($_SESSION['cart'] as $isbn => $qty){
@@ -45,34 +45,34 @@
 	</table>
 	<form method="post" action="purchase.php" class="form-horizontal">
 		<?php if(isset($_SESSION['err']) && $_SESSION['err'] == 1){ ?>
-			<p class="text-danger">All fields have to be filled</p>
+			<p class="text-danger">Tất cả các trường phải được điền</p>
 			<?php } ?>
 		<div class="form-group">
-			<label for="name" class="control-label col-md-4">Name</label>
+			<label for="name" class="control-label col-md-4">Tên</label>
 			<div class="col-md-4">
 				<input type="text" name="name" class="col-md-4" class="form-control">
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="address" class="control-label col-md-4">Address</label>
+			<label for="address" class="control-label col-md-4">Địa chỉ</label>
 			<div class="col-md-4">
 				<input type="text" name="address" class="col-md-4" class="form-control">
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="city" class="control-label col-md-4">City</label>
+			<label for="city" class="control-label col-md-4">Thành phố</label>
 			<div class="col-md-4">
 				<input type="text" name="city" class="col-md-4" class="form-control">
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="zip_code" class="control-label col-md-4">Zip Code</label>
+			<label for="zip_code" class="control-label col-md-4">Mã zip</label>
 			<div class="col-md-4">
 				<input type="text" name="zip_code" class="col-md-4" class="form-control">
 			</div>
 		</div>
 		<div class="form-group">
-			<label for="country" class="control-label col-md-4">Country</label>
+			<label for="country" class="control-label col-md-4">Quốc gia</label>
 			<div class="col-md-4">
 				<input type="text" name="country" class="col-md-4" class="form-control">
 			</div>
@@ -81,7 +81,7 @@
 			<input type="submit" name="submit" value="Purchase" class="btn btn-primary">
 		</div>
 	</form>
-	<p class="lead">Please press Purchase to confirm your purchase, or Continue Shopping to add or remove items.</p>
+	<p class="lead">Vui lòng nhấn Mua hàng để xác nhận mua hàng của bạn hoặc Tiếp tục mua hàng để thêm hoặc xóa các mặt hàng.</p>
 <?php
 	} else {
 		echo "<p class=\"text-warning\">Your cart is empty! Please make sure you add some books in it!</p>";
