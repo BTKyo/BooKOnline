@@ -8,7 +8,7 @@
 			<form class="form-horizontal">
 			  	<fieldset>
 				    <legend>Liên hệ</legend>
-				    <p class="lead">Tôi muốn nghe từ bạn! Hãy gui73mail cho chúng tôi.</p>
+				    <p class="lead">Tôi muốn nghe từ bạn! Hãy gửi mail cho chúng tôi.</p>
 				    <div class="form-group">
 				      	<label for="inputName" class="col-lg-2 control-label">Tên</label>
 				      	<div class="col-lg-10">
