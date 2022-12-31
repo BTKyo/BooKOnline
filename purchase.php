@@ -31,9 +31,9 @@
 	<table class="table">
 		<tr>
 			<th>Item</th>
-			<th>Price</th>
-	    	<th>Quantity</th>
-	    	<th>Total</th>
+			<th>Giá</th>
+	    	<th>Số lượng</th>
+	    	<th>Tổng</th>
 	    </tr>
 	    	<?php
 			    foreach($_SESSION['cart'] as $isbn => $qty){
@@ -111,7 +111,7 @@
             </div>
         </div>
     </form>
-	<p class="lead">Please press Purchase to confirm your purchase, or Continue Shopping to add or remove items.</p>
+	<p class="lead">Vui lòng nhấn Mua hàng để xác nhận mua hàng của bạn hoặc Tiếp tục mua hàng để thêm hoặc xóa các mặt hàng.</p>
 <?php
 	} else {
 		echo "<p class=\"text-warning\">Your cart is empty! Please make sure you add some books in it!</p>";

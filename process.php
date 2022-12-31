@@ -54,8 +54,8 @@
 
 	session_unset();
 ?>
-	<p class="lead text-success">Your order has been processed sucessfully. Please check your email to get your order confirmation and shipping detail!. 
-	Your cart has been empty.</p>
+	<p class="lead text-success">Đơn đặt hàng của bạn đã được xử lý thành công. Vui lòng kiểm tra email của bạn để nhận xác nhận đơn hàng và chi tiết giao hàng!
+	Giỏ hàng của bạn đã trống..</p>
 
 <?php
 	if(isset($conn)){
